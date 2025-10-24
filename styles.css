@@ -1,27 +1,170 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+ font-family: "Roboto", sans-serif;
+}
+main{
+    min-width: 320px;
+    max-width: 767px;
+}
+@media (min-width: 767px)  {
+ main {
+   min-width: 768px;;
+    max-width: 1199px;
+}
 }
 
+@media (min-width: 1200px)  {
+ main {
+   min-width: 1200px;;
+  
+}
+}
+
+
 body {
-    margin: 0;
-    font-family: sans-serif;
-    line-height: 1.5;
-    color: #2a2a2a;
-    background-color: #fafafa;
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  background-color: #fafafa;
+}
+ul {
+  list-style: none;
 }
 
 .hero {
-    min-height: 300px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #2a2a2a;
-    background-image: url(./images/header.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
+  min-height: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2a2a2a;
+  background-image: url(./images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+.header {
+  margin-bottom: 60px;
+}
+
+.nav {
+  display: none;
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .header {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .nav {
+    display: block;
+  }
+}
+
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11px;
+}
+.section-posts {
+  padding-top: 40px;
+}
+
+.post {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+@media (min-width: 767px)  {
+  .post {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+}
+
+@media (min-width: 1200px)  {
+  .post {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+}
+
+/* Контейнер со всеми постами */
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+}
+
+/* Контейнер со всеми элементами */
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* перенос строк при нехватке места */
+  gap: 30px;
+  /* отступ между карточками */
+  list-style: none;
+  padding: 0;
+  margin: 40px auto;
+  max-width: 900px;
+  justify-content: space-between;
+  /* распределяем по 2 в ряд */
+}
+
+/* Карточка поста */
+.post-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: calc(50% - 15px);
+  /* 2 карточки в ряд */
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+}
+
+.post-item img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-text h3 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.post-text p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* 📱 На мобильных — одна карточка в ряд */
+@media (max-width: 700px) {
+  .post-item {
+    width: 100%;
+  }
 }

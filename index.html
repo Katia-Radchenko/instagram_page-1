@@ -1,198 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <object
-      type="image/svg+xml"
-      data="images/symbol-defs.svg"></object>
 
-    <header>
-      <nav>
-        <ul>
-          <li>home</li>
-          <li>about us</li>
-          <li>our journal</li>
-          <li>project</li>
-          <li>news</li>
-          <li>features</li>
-          <li>contact</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero"></section>
-      <section>
-        <h2>-our Recent posts</h2>
-        <ul>
-          <li>
-            <img src="./images/post-img1.jpg" alt="img1" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <object type="image/svg+xml" data="images/symbol-defs.svg"></object>
+
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li>home</li>
+        <li>about us</li>
+        <li>our journal</li>
+        <li>project</li>
+        <li>news</li>
+        <li>features</li>
+        <li>contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero"></section>
+    <section class="section-posts">
+      <h2 class="post">-our Recent posts</h2>
+      <ul class="post-list">
+        <li class="post-item">
+          <img src="./images/post-img1.jpg" alt="img1" />
+          <div class="post-text">
             <h3>Aenean Adipiscing Etiam Vestibulum</h3>
             <p>Photography, Journal / 9 Comments</p>
             <p>
-              Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
-              ornare sem lacinia quam venenatis vestibulum.
+              Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare
+              sem lacinia quam venenatis vestibulum.
             </p>
-          </li>
-          <li>
-            <img src="./images/post4img2.jpg" alt="img2" />
-            <h3>Aenean Adipiscing Etiam Vestibulum</h3>
-            <p>Photography, Journal / 9 Comments</p>
+          </div>
+        </li>
+      
+        <li class="post-item">
+          <img src="./images/post-img2.jpg" alt="img2" />
+          <div class="post-text">
+            <h3>Donec Ullamcorper Nulla Non</h3>
+            <p>Design, Art / 5 Comments</p>
             <p>
-              Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
-              ornare sem lacinia quam venenatis vestibulum.
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer
+              posuere erat a ante venenatis.
             </p>
-          </li>
-          <li>
-            <img src="./images/post1img3.jpg" alt="img3" />
-            <h3>Aenean Adipiscing Etiam Vestibulum</h3>
-            <p>Photography, Journal / 9 Comments</p>
+          </div>
+        </li>
+      
+        <li class="post-item">
+          <img src="./images/post-img3.jpg" alt="img3" />
+          <div class="post-text">
+            <h3>Curabitur Blandit Tempus Porttitor</h3>
+            <p>Travel, Journal / 3 Comments</p>
             <p>
-              Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
-              ornare sem lacinia quam venenatis vestibulum.
+              Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget
+              urna mollis ornare.
             </p>
-          </li>
-          <li>
-            <img src="./images/post6img4.jpg" alt="img4" />
-            <h3>Aenean Adipiscing Etiam Vestibulum</h3>
-            <p>Photography, Journal / 9 Comments</p>
+          </div>
+        </li>
+      
+        <li class="post-item">
+          <img src="./images/post-img4.jpg" alt="img4" />
+          <div class="post-text">
+            <h3>Praesent Commodo Cursus Magna</h3>
+            <p>Culture, People / 7 Comments</p>
             <p>
-              Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
-              ornare sem lacinia quam venenatis vestibulum.
+              Maecenas faucibus mollis interdum. Sed posuere consectetur est at
+              lobortis.
             </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <div>
-          <h3>- Latest Instagram Shots</h3>
-          <h3>go to our instagram page -</h3>
-        </div>
-        <ul>
-          <li>
-            <picture>
-              <source
-                media="(max-width:480px)"
-                srcset="images/post-1mobw.webp"
-              />
-              <source
-                media="(max-width:1024px)"
-                srcset="images/post-1tabw.webp"
-              />
-              <img
-                src="images/post-1desk.jpg"
-                srcset="
+          </div>
+        </li>
+      </ul>
+
+    </section>
+    <section>
+      <div>
+        <h3>- Latest Instagram Shots</h3>
+        <h3>go to our instagram page -</h3>
+      </div>
+      <ul>
+        <li>
+          <picture>
+            <source media="(max-width:480px)" srcset="images/post-1mobw.webp" />
+            <source media="(max-width:1024px)" srcset="images/post-1tabw.webp" />
+            <img src="images/post-1desk.jpg" srcset="
                   images/post-1mob.jpg   400w,
                   images/post-1tab.jpg   800w,
                   images/post-1desk.jpg 1200w
-                "
-                sizes="(max-width:480px) 90vw, (max-width:1024px) 80vw, 720px"
-                alt="cicle"
-                loading="lazy"
-              />
-            </picture>
-          </li>
+                " sizes="(max-width:480px) 90vw, (max-width:1024px) 80vw, 720px" alt="cicle" loading="lazy" />
+          </picture>
+        </li>
 
-          <li>
-            <picture>
-              <source
-                media="(max-width:480px)"
-                srcset="images/post-2mob.webp"
-              />
-              <source
-                media="(max-width:1024px)"
-                srcset="images/post-2tab.webp"
-              />
-              <img
-                src="images/post-2desk.jpg"
-                srcset="
+        <li>
+          <picture>
+            <source media="(max-width:480px)" srcset="images/post-2mob.webp" />
+            <source media="(max-width:1024px)" srcset="images/post-2tab.webp" />
+            <img src="images/post-2desk.jpg" srcset="
                   images/post-2mob.jpg   400w,
                   images/post-2tab.jpg   800w,
                   images/post-2desk.jpg 1200w
-                "
-                sizes="(max-width:480px) 90vw, (max-width:1024px) 80vw, 720px"
-                alt="desk"
-                loading="lazy"
-              />
-            </picture>
-          </li>
+                " sizes="(max-width:480px) 90vw, (max-width:1024px) 80vw, 720px" alt="desk" loading="lazy" />
+          </picture>
+        </li>
 
-          <li>
-            <picture>
-              <source
-                media="(max-width:480px)"
-                srcset="images/post-3mob.webp"
-              />
-              <source
-                media="(max-width:1024px)"
-                srcset="images/post-3tab.webp"
-              />
-              <img
-                src="images/post-3desk.jpg"
-                srcset="
+        <li>
+          <picture>
+            <source media="(max-width:480px)" srcset="images/post-3mob.webp" />
+            <source media="(max-width:1024px)" srcset="images/post-3tab.webp" />
+            <img src="images/post-3desk.jpg" srcset="
                   images/post-3mob.jpg   400w,
                   images/post-3tab.jpg   800w,
                   images/post-3desk.jpg 1200w
-                "
-                sizes="(max-width:480px) 90vw, (max-width:1024px) 80vw, 720px"
-                alt="line"
-                loading="lazy"
-              />
-            </picture>
-          </li>
+                " sizes="(max-width:480px) 90vw, (max-width:1024px) 80vw, 720px" alt="line" loading="lazy" />
+          </picture>
+        </li>
 
-          <li>
-            <picture>
-              <img src="images/post-4desk.jpg" alt="car" loading="lazy" />
-            </picture>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <h4>- get in touch with us -</h4>
-      <p>
-        Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor
-        amet sed donec malesuada ullamcorper odio. Curabitur blandit tempus
-        porttitor vollisky inceptos mollisestor.
-      </p>
-     <ul class="social-icons">
-  <li>
-    <svg class="icon">
-      <use href="./images/svg/rss-icon.svg"></use>
-    </svg>
-  </li>
-  <li>
-    <svg class="icon">
-      <use href="./images/svg/facebook-icon.svg" width="42"></use>
-    </svg>
-  </li>
-  <li>
-   <svg class="icon">
-  <use href="./images/svg/twitter-icon.svg" width="42"></use>
-</svg>
-  </li>
-  <li>
-    <svg class="icon">
-      <use href="./images/svg/dribbble-icon.svg" width="42"></use>
-    </svg>
-  </li>
-  <li>
-    <svg class="icon">
-      <use href="./images/svg/pinterest-icon.svg" width="42"></use>
-    </svg>
-  </li>
-</ul>
-<addres>
-<div>Moonshine St. 14-05</div>
-<div>Light City</div>
-<div><a href="tel:+001234567890">T. +00 (123) 456 78 90</a>
-<a href="mailto:first.last@email.com">first.last@email.com</a></div>
-</address>
-    </footer>
-  </body>
+        <li>
+          <picture>
+            <img src="images/post-4desk.jpg" alt="car" loading="lazy" />
+          </picture>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <h4>- get in touch with us -</h4>
+    <p>
+      Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor
+      amet sed donec malesuada ullamcorper odio. Curabitur blandit tempus
+      porttitor vollisky inceptos mollisestor.
+    </p>
+    <ul class="social-icons">
+      <li>
+        <svg class="icon">
+          <use href="./images/svg/rss-icon.svg"></use>
+        </svg>
+      </li>
+      <li>
+        <svg class="icon">
+          <use href="./images/svg/facebook-icon.svg" width="42"></use>
+        </svg>
+      </li>
+      <li>
+        <svg class="icon">
+          <use href="./images/svg/twitter-icon.svg" width="42"></use>
+        </svg>
+      </li>
+      <li>
+        <svg class="icon">
+          <use href="./images/svg/dribbble-icon.svg" width="42"></use>
+        </svg>
+      </li>
+      <li>
+        <svg class="icon">
+          <use href="./images/svg/pinterest-icon.svg" width="42"></use>
+        </svg>
+      </li>
+    </ul>
+    <addres>
+      <div>Moonshine St. 14-05</div>
+      <div>Light City</div>
+      <div><a href="tel:+001234567890">T. +00 (123) 456 78 90</a>
+        <a href="mailto:first.last@email.com">first.last@email.com</a>
+      </div>
+      </address>
+  </footer>
+</body>
+
 </html>
